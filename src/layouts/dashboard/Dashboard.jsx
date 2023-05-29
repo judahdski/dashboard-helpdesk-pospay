@@ -17,7 +17,12 @@ const Dashboard = () => {
                 ))}
             </div>
             <div className="-mt-24 px-12">
-                <Table title="Tiket yang tersedia" components={availableTickets} />
+                <Table
+                    title="Tiket yang tersedia"
+                    components={availableTickets.map((component, index) => (
+                        <div key={index}>{component}</div>
+                    ))}
+                />
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ const Table = ({ title, components }) => {
                 <p className="font-medium">{title}</p>
             </div>
             <div className="px-6 py-4 flex flex-col gap-4">
-                <QuestionCard />
+                {!components ? <p className='text-slate-400 font-medium'>Tidak ada data.</p> : components}
             </div>
         </div>
     );

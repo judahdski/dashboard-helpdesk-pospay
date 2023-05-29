@@ -1,11 +1,16 @@
 import React from 'react';
 
-import Table from "../../components/Table";
+import Table from '../../components/Table';
+import TicketCard from '../../components/TicketCard';
 
 const Ticket = () => {
-    return <div className='px-12 pt-8'>
-        <Table title='Semua Tiket' />
-    </div>;
+    const allTickets = [<TicketCard />, <TicketCard />, <TicketCard />, <TicketCard />, <TicketCard />, <TicketCard />];
+
+    return (
+        <div className="px-12 pt-8">
+            <Table title="Semua Tiket" components={allTickets} />
+        </div>
+    );
 };
 
 export default Ticket;
