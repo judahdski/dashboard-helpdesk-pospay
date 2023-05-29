@@ -18,13 +18,15 @@ function App() {
         <>
             <div className="w-full h-full flex">
                 <SideNav setNavTextHandler={setNavText} />
-                <div className='flex-1'>
+                <div className="flex-1 flex flex-col">
                     <Header navText={navText} />
-                    <Routes>
-                        <Route path="/" element={<Dashboard />} />
-                        <Route path="/question" element={<Question />} />
-                        <Route path="/ticket" element={<Ticket />} />
-                    </Routes>
+                    <div className="flex-1">
+                        <Routes>
+                            <Route path="/" element={<Dashboard />} />
+                            <Route path="/question" element={<Question />} />
+                            <Route path="/ticket" element={<Ticket />} />
+                        </Routes>
+                    </div>
                     <Footer />
                 </div>
             </div>
