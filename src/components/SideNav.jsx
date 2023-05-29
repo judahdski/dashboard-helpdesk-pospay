@@ -25,7 +25,7 @@ const SideNav = ({ setNavTextHandler }) => {
     ];
 
     return (
-        <div className="w-[250px] h-full px-6 py-4 bg-white">
+        <div className="w-[250px] h-[100vh] px-6 py-4 bg-white fixed left-0 z-10">
             <img src={PospayLogo} alt="Pospay Logo" />
             <hr className="h-[0.5px] mt-6 mb-8 border-none bg-[#D8D8D8]" />
             <nav>

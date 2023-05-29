@@ -18,9 +18,9 @@ function App() {
         <>
             <div className="w-full h-full flex">
                 <SideNav setNavTextHandler={setNavText} />
-                <div className="flex-1 flex flex-col">
+                <div className="ps-[250px] flex-1 flex flex-col relative">
                     <Header navText={navText} />
-                    <div className="flex-1">
+                    <div className="flex-1 overflow-y-scroll mt-16">
                         <Routes>
                             <Route path="/" element={<Dashboard />} />
                             <Route path="/question" element={<Question />} />
