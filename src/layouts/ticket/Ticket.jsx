@@ -2,13 +2,18 @@ import React from 'react';
 
 import Table from '../../components/Table';
 import TicketCard from '../../components/TicketCard';
+import allTickets from './data';
 
 const Ticket = () => {
-    const allTickets = [<TicketCard />, <TicketCard />, <TicketCard />, <TicketCard />, <TicketCard />, <TicketCard />];
+    const tickets = allTickets.map(({ q, category, ticketNumber, isAnswered }, index) => (
+        <div key={index}>
+            <TicketCard q={q} category={category} ticketNumber={ticketNumber} isAnswered={isAnswered} />
+        </div>
+    ));
 
     return (
         <div className="px-12 pt-8">
-            <Table title="Semua Tiket" components={allTickets} />
+            <Table title="Semua Tiket" components={tickets} />
         </div>
     );
 };
