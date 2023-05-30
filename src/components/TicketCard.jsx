@@ -11,11 +11,11 @@ const TicketCard = ({ q, category, ticketNumber, isAnswered }) => {
                 </div>
                 <div className="flex gap-4">
                     {isAnswered ? (
-                        <button className="border bg-[#ff543d] border-none rounded-lg px-4 py-1.5 text-white opacity-80" disabled>Terjawab</button>
+                        <button className="border bg-[#ff543d] border-none rounded-lg px-4 py-1.5 text-white opacity-50" disabled>Terjawab</button>
                     ) : (
                         <>
                             <button className="border border-[#00FF47] rounded-lg px-4 py-1.5 text-[#00FF47] hover:bg-[#00FF47] hover:text-white transition">Sudah Dijawab</button>
-                            <button className="border bg-[#0094FF] border-none rounded-lg px-4 py-1.5 text-white transition hover:bg-[#007bff]">Jawab</button>
+                            <button className="border bg-[#0077ff] border-none rounded-lg px-4 py-1.5 text-white transition hover:bg-[#0055ff]">Jawab</button>
                         </>
                     )}
                 </div>
