@@ -29,7 +29,7 @@ const TicketCard = ({ q, category, ticketNumber, isAnswered }) => {
                     }}
                     onClick={() => collapseHandle()}
                 >
-                    <i class="fa-solid fa-xmark text-slate-600"></i>
+                    <i className="fa-solid fa-xmark text-slate-600"></i>
                 </div>
             </div>
             <textarea
